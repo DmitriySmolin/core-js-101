@@ -6,6 +6,7 @@
  ******************************************************************************************* */
 
 /**
+
  * Returns the result of concatenation of two strings.
  *
  * @param {string} value1
@@ -51,7 +52,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-  return `Hello,${firstName} ${lastName}`;
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -65,7 +66,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  value.substr(7);
+  return value.slice(7, value.length - 1);
 }
 
 /**
