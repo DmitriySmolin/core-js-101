@@ -174,6 +174,7 @@ const cssSelectorBuilder = {
   },
   error(num) {
     if (this.number > num) {
+      // eslint-disable-next-line operator-linebreak
       throw new Error('Selector parts should be arranged in' +
         ' the following order: element, id, class, attribute, pseudo-class, pseudo-element');
     }
